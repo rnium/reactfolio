@@ -1,6 +1,7 @@
 import React from "react";
 
 import Project from "./project";
+import { Grid } from '@mui/material'
 
 import INFO from "../../data/user";
 
@@ -8,9 +9,9 @@ import "./styles/allProjects.css";
 
 const AllProjects = () => {
 	return (
-		<div className="all-projects-container">
+		<Grid container>
 			{INFO.projects.map((project, index) => (
-				<div className="all-projects-project" key={index}>
+				<Grid item xs={12} s={6} md={4} className="all-projects-project" key={index}>
 					<Project
 						logo={project.logo}
 						title={project.title}
@@ -18,9 +19,9 @@ const AllProjects = () => {
 						linkText={project.linkText}
 						link={project.link}
 					/>
-				</div>
+				</Grid>
 			))}
-		</div>
+		</Grid>
 	);
 };
 
