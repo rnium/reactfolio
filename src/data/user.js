@@ -7,7 +7,7 @@ const INFO = {
 	},
 
 	socials: {
-		twitter: "https://twitter.com/",
+		leetcode: "https://leetcode.com/u/rnium/",
 		github: "https://github.com/",
 		linkedin: "https://linkedin.com/",
 		instagram: "https://instagram.com/",

@@ -116,54 +116,32 @@ const Homepage = () => {
 
 						<div className="homepage-socials">
 							<a
-								href={INFO.socials.twitter}
+								href={INFO.socials.leetcode}
 								target="_blank"
 								rel="noreferrer"
 							>
-								<FontAwesomeIcon
-									icon={faHackerrank}
-									className="homepage-social-icon"
-								/>
+								<img src="/static/images/leetcode-icon.svg" className="homepage-social-icon" alt="logo" />
 							</a>
 							<a
 								href={INFO.socials.github}
 								target="_blank"
 								rel="noreferrer"
 							>
-								<FontAwesomeIcon
-									icon={faGithub}
-									className="homepage-social-icon"
-								/>
+								<img src="/static/images/hackerrank.svg" className="homepage-social-icon" alt="logo" />
 							</a>
 							<a
-								href={INFO.socials.stackoverflow}
+								href={INFO.socials.github}
 								target="_blank"
 								rel="noreferrer"
 							>
-								<FontAwesomeIcon
-									icon={faStackOverflow}
-									className="homepage-social-icon"
-								/>
-							</a>
-							<a
-								href={INFO.socials.instagram}
-								target="_blank"
-								rel="noreferrer"
-							>
-								<FontAwesomeIcon
-									icon={faInstagram}
-									className="homepage-social-icon"
-								/>
+								<img src="/static/images/github.svg" className="homepage-social-icon" alt="logo" />
 							</a>
 							<a
 								href={`mailto:${INFO.main.email}`}
 								target="_blank"
 								rel="noreferrer"
 							>
-								<FontAwesomeIcon
-									icon={faMailBulk}
-									className="homepage-social-icon"
-								/>
+								<img src="/static/images/email.svg" className="homepage-social-icon" alt="logo" />
 							</a>
 						</div>
 
