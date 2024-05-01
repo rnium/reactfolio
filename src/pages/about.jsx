@@ -62,9 +62,6 @@ const About = () => {
 								</div>
 							</div>
 						</div>
-						<div className="about-socials-mobile">
-							<Socials />
-						</div>
 					</div>
 					<div className="page-footer">
 						<Footer />

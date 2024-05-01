@@ -123,7 +123,7 @@ const Homepage = () => {
 								<img src="/static/images/leetcode-icon.svg" className="homepage-social-icon" alt="logo" />
 							</a>
 							<a
-								href={INFO.socials.github}
+								href={INFO.socials.hackerrank}
 								target="_blank"
 								rel="noreferrer"
 							>
