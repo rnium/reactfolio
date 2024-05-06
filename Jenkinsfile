@@ -21,7 +21,8 @@ pipeline {
                 echo 'Building'
                 sh '''
                 npm run build
-                pwd ls
+                pwd 
+                ls
                 '''
             }
         }
