@@ -4,7 +4,6 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import {
 	faGithub,
 	faLinkedin,
-	faInstagram,
 	faTelegram
 } from "@fortawesome/free-brands-svg-icons";
 
