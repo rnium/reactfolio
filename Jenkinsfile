@@ -4,6 +4,9 @@ pipeline {
             label 'docker-agent-nodejs'
         }
     }
+    triggers {
+        pollSCM '* * * * *'
+    }
     stages {
         stage('Install') {
             steps {
