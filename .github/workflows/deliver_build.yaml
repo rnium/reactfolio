@@ -21,9 +21,13 @@ jobs:
         run: npm install
       - name: Run Build
         run: npm run build
-      - name: Setup Agent
-        uses: webfactory/ssh-agent@v0.9.0
+      - name: Copy folder content recursively to remote
+        uses: garygrossgarten/github-action-scp@release
         with:
-          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
-      
+          local: build
+          remote: home/rony
+          host: ${{ secrets.HOST }}
+          username: ${{ secrets.SSH_USER }}
+          password: ${{ secrets.PASSWORD }}
+
       
