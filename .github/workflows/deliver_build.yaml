@@ -1,0 +1,28 @@
+name: Deliver React Build
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+
+jobs:
+  deliver:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup NodeJS
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install Dependencies:
+        run: npm install
+      - name: Check LS Pre
+        run: ls -al
+      - name: Run Build
+        run: npm run build
+      - name: Check LS Post
+        run: ls -al
+      
