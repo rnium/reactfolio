@@ -19,10 +19,11 @@ jobs:
           node-version: '20'
       - name: Install Dependencies
         run: npm install
-      - name: Check LS Pre
-        run: ls -al
       - name: Run Build
         run: npm run build
-      - name: Check LS Post
-        run: ls -al
+      - name: Setup Agent
+        uses: webfactory/ssh-agent@0.9.0
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+      
       
