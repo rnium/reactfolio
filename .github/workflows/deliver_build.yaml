@@ -21,7 +21,7 @@ jobs:
         run: npm install
       - name: Run Build
         run: npm run build
-      - name: Copy folder content recursively to remote
+      - name: Copy folder content
         uses: garygrossgarten/github-action-scp@release
         with:
           local: build
