@@ -22,7 +22,7 @@ jobs:
       - name: Run Build
         run: npm run build
       - name: Setup Agent
-        uses: webfactory/ssh-agent@0.9.0
+        uses: webfactory/ssh-agent@0.9
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
       
