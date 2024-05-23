@@ -25,9 +25,11 @@ jobs:
         uses: garygrossgarten/github-action-scp@release
         with:
           local: build
-          remote: /home/rony
+          remote: ${{ secrets.REMOTE_DIR }}
           host: ${{ secrets.HOST }}
           username: ${{ secrets.SSH_USER }}
           password: ${{ secrets.PASSWORD }}
+      - name: Remove Build
+        run: rm -rf build
 
       
